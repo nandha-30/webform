@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "program": "WEBFORM/server.js",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "node",
+        "runtimeArgs": ["--inspect-brk"],
+        "port": 9229
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}"
+      }
+    ]
+  }
+  
